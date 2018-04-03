@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -574,23 +577,28 @@ public class X1_dssquestion extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jNext_X1);
-        jNext_X1.setBounds(450, 480, 80, 23);
+        jNext_X1.setBounds(450, 480, 80, 29);
 
         jHelp_X1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jHelp_X1.setForeground(new java.awt.Color(255, 153, 0));
         jHelp_X1.setText("Help");
         jPanel1.add(jHelp_X1);
-        jHelp_X1.setBounds(240, 20, 80, 23);
+        jHelp_X1.setBounds(240, 20, 80, 29);
 
         jContact_X1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jContact_X1.setForeground(new java.awt.Color(255, 153, 0));
         jContact_X1.setText("Contact");
+        jContact_X1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jContact_X1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jContact_X1);
-        jContact_X1.setBounds(160, 20, 80, 23);
+        jContact_X1.setBounds(160, 20, 80, 29);
 
         jHome_X1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/house-black-building-shape.png"))); // NOI18N
         jPanel1.add(jHome_X1);
-        jHome_X1.setBounds(903, 20, 40, 25);
+        jHome_X1.setBounds(903, 20, 40, 28);
 
         jBackground_X1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/img_dssquestion5.jpg"))); // NOI18N
         jPanel1.add(jBackground_X1);
@@ -640,6 +648,10 @@ public class X1_dssquestion extends javax.swing.JFrame {
 
     private void jQue1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue1ActionPerformed
         // TODO add your handling code here:
+        if(jQue1.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue1ActionPerformed
 
     private void jQue2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue2ActionPerformed
@@ -811,6 +823,10 @@ public class X1_dssquestion extends javax.swing.JFrame {
         X2_dssweakness x = new X2_dssweakness();
         x.setVisible(true);
     }//GEN-LAST:event_jNext_X1ActionPerformed
+
+    private void jContact_X1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jContact_X1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jContact_X1ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -54,7 +57,7 @@ public class dsshome extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(250, 470, 90, 23);
+        jButton1.setBounds(250, 470, 90, 29);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/img_homepage5.jpg"))); // NOI18N
         jPanel1.add(jLabel1);
@@ -84,8 +87,9 @@ public class dsshome extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         dispose();
+        //JOptionPane.showMessageDialog(this, "Hello, " + jName.getText());
         X1_dssquestion x = new X1_dssquestion();
-        x.setVisible(true);
+        x.setVisible(true);    
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -127,7 +131,7 @@ public class dsshome extends javax.swing.JFrame {
     private javax.swing.JLabel jBackground;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JTextField jName;
+    public static javax.swing.JTextField jName;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
