@@ -39,6 +39,11 @@ public class X2_dssweakness extends javax.swing.JFrame {
         jHome_X1 = new javax.swing.JButton();
         jHelp_X2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jContact_X3 = new javax.swing.JButton();
+        jHelp_X3 = new javax.swing.JButton();
+        jPrevious_X3 = new javax.swing.JButton();
+        jNext_X3 = new javax.swing.JButton();
+        jHome_X2 = new javax.swing.JButton();
 
         jBackground_X2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/img_dssweakness1.jpg"))); // NOI18N
 
@@ -138,6 +143,49 @@ public class X2_dssweakness extends javax.swing.JFrame {
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, 0, 960, 540);
 
+        jContact_X3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jContact_X3.setForeground(new java.awt.Color(255, 153, 0));
+        jContact_X3.setText("Contact");
+        jPanel1.add(jContact_X3);
+        jContact_X3.setBounds(160, 20, 80, 23);
+
+        jHelp_X3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jHelp_X3.setForeground(new java.awt.Color(255, 153, 0));
+        jHelp_X3.setText("Help");
+        jPanel1.add(jHelp_X3);
+        jHelp_X3.setBounds(240, 20, 80, 23);
+
+        jPrevious_X3.setBackground(new java.awt.Color(102, 153, 255));
+        jPrevious_X3.setForeground(new java.awt.Color(255, 255, 255));
+        jPrevious_X3.setText("Previous");
+        jPrevious_X3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jPrevious_X3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jPrevious_X3);
+        jPrevious_X3.setBounds(395, 480, 80, 23);
+
+        jNext_X3.setBackground(new java.awt.Color(102, 153, 255));
+        jNext_X3.setForeground(new java.awt.Color(255, 255, 255));
+        jNext_X3.setText("Next");
+        jNext_X3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jNext_X3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jNext_X3);
+        jNext_X3.setBounds(490, 480, 80, 23);
+
+        jHome_X2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/house-black-building-shape.png"))); // NOI18N
+        jHome_X2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jHome_X2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jHome_X2);
+        jHome_X2.setBounds(900, 20, 40, 25);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -171,12 +219,26 @@ public class X2_dssweakness extends javax.swing.JFrame {
     }//GEN-LAST:event_jPrevious_X2ActionPerformed
 
     private void jNext_X2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jNext_X2ActionPerformed
-        // TODO add your handling code here:
+    dispose();
+        X3_dssgrade x = new X3_dssgrade();
+        x.setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jNext_X2ActionPerformed
 
     private void jHome_X1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jHome_X1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jHome_X1ActionPerformed
+
+    private void jPrevious_X3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPrevious_X3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPrevious_X3ActionPerformed
+
+    private void jNext_X3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jNext_X3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jNext_X3ActionPerformed
+
+    private void jHome_X2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jHome_X2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jHome_X2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -216,12 +278,17 @@ public class X2_dssweakness extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jBackground_X2;
     private javax.swing.JButton jContact_X2;
+    private javax.swing.JButton jContact_X3;
     private javax.swing.JButton jHelp_X2;
+    private javax.swing.JButton jHelp_X3;
     private javax.swing.JButton jHome_X1;
+    private javax.swing.JButton jHome_X2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JButton jNext_X2;
+    private javax.swing.JButton jNext_X3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton jPrevious_X2;
+    private javax.swing.JButton jPrevious_X3;
     private javax.swing.JCheckBox jWeak1;
     private javax.swing.JCheckBox jWeak2;
     private javax.swing.JCheckBox jWeak3;
